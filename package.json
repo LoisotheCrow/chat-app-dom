@@ -5,6 +5,7 @@
   "keywords": ["react", "react-dom", "chat", "array", "props"],
   "main": "src/index.js",
   "dependencies": {
+    "moment": "2.24.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-scripts": "2.0.3"

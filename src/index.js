@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import moment from "moment";
 import PostForm from "./Components/PostForm";
 import Message from "./Components/Message";
 
@@ -17,7 +18,7 @@ class App extends Component {
     const message = {
       title: title || "Untitled",
       text: text || "Empty message",
-      date: Date.now()
+      date: moment().format("DD.MM.YYYY hh:mm:ss")
     };
     const newMessages = [...messages, message];
     this.setState({ messages: newMessages });
