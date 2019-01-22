@@ -20,12 +20,14 @@ class App extends Component {
       text: text || "Empty message",
       date: moment().format("DD.MM.YYYY hh:mm:ss")
     };
+    console.log(message);
     const newMessages = [...messages, message];
     this.setState({ messages: newMessages });
   };
 
   render() {
     const { messages } = this.state;
+    console.log(messages);
     return (
       <div className="App">
         <h1>Recent messages</h1>

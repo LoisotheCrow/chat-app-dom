@@ -1,3 +1,5 @@
+import React from "react";
+
 export default ({ data: { title, text, date } }) => (
   <div>
     <h3>{title}</h3>

@@ -22,12 +22,8 @@ class PostForm extends Component {
     const { submit } = this.props;
     return (
       <div>
-        <Input
-          name="title"
-          handler={this.handleValue}
-          placeholder="Заголовок"
-        />
-        <Input name="text" handler={this.handleValue} placeholder="Сообщение" />
+        <Input name="title" handler={this.handleValue} placeholder="Title" />
+        <Input name="text" handler={this.handleValue} placeholder="Message" />
         <button onClick={() => submit(values)}>Send</button>
       </div>
     );
